@@ -2,11 +2,10 @@
 #include <fstream>
 #include <vector>
 #include <ctime>
-#include <stack>
 
 using namespace std;
 
-static char cpu[30000];
+static char cpu[70000];
 
 
 
