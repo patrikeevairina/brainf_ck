@@ -105,7 +105,11 @@ int main(int argc, char** argv)
                     cin >> (*buf);
                 break;
             }
-
+	    case '0':
+	    {
+		*buf = 0;
+		break;
+	   }	
             case '[':
             {
                 if(!(*buf))
@@ -153,6 +157,6 @@ int main(int argc, char** argv)
             return 9;
         }
     }
-    cout << (float)(clock() - start)/CLOCKS_PER_SEC << endl;
+    cout << endl << (float)(clock() - start)/CLOCKS_PER_SEC << endl;
     return 0;
 }
